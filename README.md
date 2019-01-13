@@ -113,13 +113,13 @@ Table of Contents
  
  * Officer year of birth vs Officer gender <br/>
  ![officer_year_of_birth_v_officer_gender](/Images/officer_year_of_birth_v_officer_gender.PNG)<br/>
- - Most of them are from 1977 - 1992.
- - From 1985-1990 there is an uptick of hires, but female officers were hired less.
- - From 1985 there is an upward trend of hiring more female officers.
+ i)   Most of them are from 1977 - 1992. <br/>
+ ii)  From 1985-1990 there is an uptick of hires, but female officers were hired less. <br/>
+ iii) From 1985 there is an upward trend of hiring more female officers.
  
  * Officer race vs Officer gender <br/>
  ![officer_race_v_officer_gender](/Images/officer_race_v_officer_gender.PNG)<br/>
- More White female officers.
+ Most female officers are white.
  
  * Officer year of birth vs Use of force indicator <br/>
  ![officer_year_of_exp_v_force_ind](/Images/officer_year_of_exp_v_force_ind.PNG)
