@@ -10,12 +10,41 @@ Table of Contents
   * [Conclusion](#conclusion)
 
 ## Data sources
+ 
+ The data is accquired from City of [Seattle Open Data portal](https://data.seattle.gov/Public-Safety/Crisis-Data/i2q9-thny)
 
-  Data.Seattle : https://data.seattle.gov/Public-Safety/Crisis-Data/i2q9-thny
-
-  Dev.Socrata : https://dev.socrata.com/foundry/data.seattle.gov/ri7i-gfqd
+ And also available through [API Dev.Socrata](https://dev.socrata.com/foundry/data.seattle.gov/ri7i-gfqd)
 
 ## Data cleaning
+
+ Start with initial exploring and having a general feel for the data 
+ 
+ Let's start by asking few questions
+ * What are the features
+ * What are the expected types (int, float, string, boolean)?
+ * Is there obvious missing data ?
+ * Is there other types of missing data that’s not so obvious ?
+ 
+ ![results_df_info](/Images/results_df_info.PNG)
+ 
+ Things to dealing with
+ * Standard missing values (Pandas can detect them)
+ * Non-standard missing values (different formats)
+ * Unexpected missing values (can be mix of above two or totally different ones)
+ They can be dealth with removing or replacing or doing some conversions or some combination of mentioned.
+ 
+ And finally summarizing any missing values.
+ 
+ The final processed or refined data info looks like this. <br/> 
+ ![results_df_info2](/Images/results_df_info2.PNG)
+ 
+ Additional things done for refinement
+ * Converted strings to categorical 
+ * Converted time to datetime format
+ * Taking mean for floating numbers if missing or inconsistent
+ * If not categorizable or fewer data points, clubbed into seperate category
+ 
+ This [Data cleaning notebook](https://github.com/ambatirahul/Seattle_Crisis_Data_Analysis/blob/master/DataWrangling/DataWrangling.ipynb) provides information on what has been done to refine the data.
 
 ## Data analysis
 
