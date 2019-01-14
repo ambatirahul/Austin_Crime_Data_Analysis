@@ -139,9 +139,102 @@ Table of Contents
  * Disposition vs Final call type <br/>
  ![disposition_v_final_call_type](/Images/disposition_v_final_call_type.PNG)
  
- [Data exploration and analysis notebook](https://github.com/ambatirahul/Seattle_Crisis_Data_Analysis/blob/master/AnalysisAndStoryTelling/DataAnalysis.ipynb)
+ There are **952** unique officers in this data set.
+ 
+ Instead of dealing with all the cases, let's deal with officers who handled more than **100** cases.<br/>
+ Extracting the data and doing analysis on the data.
+ 
+ * Call type  <br/>
+ ![call_type_top100](/Images/call_type_top100.PNG)
+ 
+ * Final Call type  <br/>
+ ![final_call_type_top100](/Images/final_call_type_top100.PNG)
+ 
+ * Officer race  <br/>
+ ![officer_race_top100](/Images/officer_race_top100.PNG)
+ 
+ * Officer precinct vs Officer bureau <br/>
+ ![officer_precinct_desc_v_officer_bureau_desc_top100](/Images/officer_precinct_desc_v_officer_bureau_desc_top100.PNG)
+ 
+ * Officer squad desc  <br/>
+ ![officer_squad_desc_top100](/Images/officer_squad_desc_top100.PNG)
+ 
+ * Officer precinct desc  <br/>
+ ![officer_precinct_desc_top100](/Images/officer_precinct_desc_top100.PNG)
+ 
+ * Sector vs Officer gender  <br/>
+ ![sector_v_officer_gender_top100](/Images/sector_v_officer_gender_top100.PNG)
+ 
+ * Sector vs Officer race  <br/>
+ ![sector_v_race_top100](/Images/sector_v_race_top100.PNG)
+ 
+ * Officer precinct <br/>
+ ![officer_precinct_desc](/Images/officer_precinct_desc.PNG)
+ 
+ * Officer precinct vsTemplate <br/>
+ ![officer_precinct_desc_df_template_grp_ge2](/Images/officer_precinct_desc_df_template_grp_ge2.PNG)
+ 
+ * Officer year of experience greater than 30 <br/>
+ ![officer_year_of_exp_mean_ge30yrs](/Images/officer_year_of_exp_mean_ge30yrs.PNG)
+ 
  
 ## Time series analysis
+ 
+ * Reported time and Occurred time  <br/>
+ ![ts_day_time](/Images/ts_day_time.PNG)<br/>
+ There are no reporting before 05-15-2016, so removed date before 05-15-2016.
+ 
+ * Reported time and Occurred time after 05-15-2016  <br/>
+ ![ts_day_time_after_05](/Images/ts_day_time_after_05.PNG) <br/>
+ There are certain time frames where there are more Crisis occurrences.
+ 
+ * Time difference percentile  <br/>
+ ![reported_minus_occurred_percentile](/Images/reported_minus_occurred_percentile.PNG)
+ 
+ * Time difference percentile after 05-15-2016 <br/>
+ ![reported_minus_occurred_percentile_after_05](/Images/reported_minus_occurred_percentile_after_05.PNG)
+ 
+ * Distplot for time difference in days <br/>
+ ![ts_days_distplot](/Images/ts_days_distplot.PNG) <br/>
+ Usually it's handled with in a day.
+ 
+ * Distplot for time difference in hours <br/>
+ ![ts_hours_displot](/Images/ts_hours_displot.PNG) <br/>
+ Most of the time it is handled within 5 hours of the reported time. 
+ 
+ * Reported vs Occurred date time plot <br/>
+ ![ts_reported_v_occurred_date_time_after_05](/Images/ts_reported_v_occurred_date_time_after_05.PNG)
+ 
+ * Reported vs Occurred time difference (15 minute rounding) <br/>
+ ![ts_15min_rounding_after_05](/Images/ts_15min_rounding_after_05.PNG)
+ 
+ * Reported vs Occurred time difference in hours <br/>
+ ![ts_rolling_hours_after_05](/Images/ts_rolling_hours_after_05.PNG)
+ 
+ * Reported vs Occurred time difference in days <br/>
+ ![ts_rolling_day_time_after_05](/Images/ts_rolling_day_time_after_05.PNG) <br/>
+ From the above graphs we see those occurrences spiking up during early part of the year.
+ 
+ * Difference of hours <br/>
+ ![ts_hours_diff_after_05](/Images/ts_hours_diff_after_05.PNG)
+ 
+ * Difference of days <br/>
+ ![ts_day_diff_after_05](/Images/ts_day_diff_after_05.PNG)
+ 
+ * Difference of hours <br/>
+ ![ts_24_hours_diff_after_05](/Images/ts_24_hours_diff_after_05.PNG)
+ 
+ * Difference of weekdays <br/>
+ ![ts_weekday_diff_after_05](/Images/ts_weekday_diff_after_05.PNG)
+ 
+ * Time difference between Reported and occurred (in seconds)<br/>
+ ![ts_reported_minus_occurred_date_time_diff](/Images/ts_reported_minus_occurred_date_time_diff.PNG) <br/>
+ We see as the year goes on, the time difference also increases and we see early of the year the time difference reduces.<br/>
+ And observing patterns we see the crisis cases appear (spikes up) during the early part of a year, and that's where the crisis team are active and response time is less.
+ 
+
+ For further info about exploration and analysis refer [Data exploration and analysis notebook](https://github.com/ambatirahul/Seattle_Crisis_Data_Analysis/blob/master/AnalysisAndStoryTelling/DataAnalysis.ipynb) and for time series refer [Time Series notebook](https://github.com/ambatirahul/Seattle_Crisis_Data_Analysis/blob/master/AnalysisAndStoryTelling/TimeSeriesAnalysis.ipynb)
+ 
 
 ## Machine learning
 
